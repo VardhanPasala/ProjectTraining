@@ -45,5 +45,5 @@ console.log(friends);
 friends.push("Bharath");
 console.log(friends);
 // for adding to first index
-friends.unshift("Ranjith");
+friends.unshift("Praveen");
 console.log(friends);
