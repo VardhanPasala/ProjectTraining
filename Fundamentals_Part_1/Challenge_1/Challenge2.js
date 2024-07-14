@@ -8,3 +8,9 @@ johnBMI= massJohn/(heightJohn*heightJohn);
 const markHigherBMI=(markBMI>johnBMI)
  
  console.log(markBMI,johnBMI,markHigherBMI);
+
+ if(markBMI>johnBMI){
+        console.log(`markBMI (${markBMI}) is greater than johnBMI (${johnBMI}) `);
+ }else {
+    console.log(`johnBMI(${johnBMI}) is greater than markBMI(${markBMI}) `);
+ }

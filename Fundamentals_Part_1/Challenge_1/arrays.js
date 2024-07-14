@@ -44,6 +44,75 @@ const friends=["Vardhan","Simhadri","Panda","Durga"];
 console.log(friends);
 friends.push("Bharath");
 console.log(friends);
-// for adding to first index
-friends.unshift("Praveen");
+// for removing the last elements of an array
+//POP Method
+const removeLast=friends.pop();
+console.log("The removed values is :"+removeLast);
+
+//for adding the value from start
+//UNSHIFT method
+const addedValues=friends.unshift("Siva","Nagarjuna");
+console.log("The added values of an array:"+addedValues);
+
+//for removing partiticular values in the arrray
+// Splice method
+const removedValuesof=friends.splice(1,2);
+console.log("The removed values through splice :"+removedValuesof);
+
+const addesdvaluesof=friends.splice(1,2,"VK","Sai");
+console.log("The added values through splice:"+ addesdvaluesof);
 console.log(friends);
+
+// for printing from start to final index 
+//Slice
+const newslice=friends.slice(0,2);
+console.log("New array of slice method:"+newslice);
+
+// for adding two arrays together and form a single array
+//CONCAT
+
+let names=["Vardhan","flowers","cat"];
+let nums=[1,2,3,4,5];
+let Mergedarray=names.concat(nums);
+console.log("The merged array is:"+Mergedarray);
+
+//for getting the index number of a value in the array
+// INDEX OF 
+
+let flowers=["Rose","lilly","Jasmin"];
+let indexvalue=flowers.indexOf("Rose");
+console.log("Index value of Rose is"+indexvalue);
+
+// if there ara duplicate values present int he array
+let flower=["Rose","lilly","Jasmin","Rose", "Dahlia","Rose"];
+let dupindex= flower.indexOf("Rose",1);
+console.log("The duplicate value index number is:"+dupindex);
+
+let seconddup=flower.indexOf("Rose",4);
+console.log("index value of second duplicate value:"+seconddup);
+
+// For cheking the boolean status of the value
+
+let fruits=["apple","Banana","Mango","Soppota"]
+let statusof=fruits.includes("apple");
+console.log("The boolean status of the aplle is :"+ statusof);
+
+// forEach 
+
+let numberss=[1,2,3,4,5,6,7,8,9,10];
+numberss.forEach((add)=>{
+    console.log("The multiplication of"+add*2)
+})
+
+
+
+// Map function 
+
+let fahren=[32,45,43,67,89];
+
+function fahtocel(fahren){
+    return (fahren-32)*5/9;
+}
+
+let celcius=fahren.map(fahtocel);
+console.log(celcius);
