@@ -23,11 +23,15 @@ let employee=[{name:"Vardhan",  age:25, gender:"Male"},
               {name:"Ambika",    age:24, gender:"Female"},
               {name:"Anusha",    age:24, gender:"Female"}];
 
-        let maledetails=employee.filter((employee)=>{
-        return employee.gender ==="Female";
+       /* let maledetails=employee.filter(function(employee){
+        //return employee.gender ==="Female";
+        return employee.age>20;
         });
 
-         console.log(maledetails);
+         console.log(maledetails);*/
+
+         let newPrices = employee.filter((employe) => (employe > 24 && !Number.isNaN(price)));
+console.log(newPrices);
 
 
       
