@@ -5,7 +5,12 @@ public class DifferenttypesOfVariables {
 	// This Java program demonstrates the use of different variable types: primitive and non-primitive.
 	// Primitive data types include int, double, boolean, etc.
 	// Non-primitive data types include String, arrays, etc.
-	
+	public static void addition () {
+		int num1=20;
+		int num2=30;
+		int sum = num1 + num2;
+		System.out.println("Sum of " + num1 + " and " + num2 + " is: " + sum);
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -23,6 +28,10 @@ public class DifferenttypesOfVariables {
 		for (int num : numbers) {
 			System.out.print(num + " ");
 		}
+		
+		
+		DifferenttypesOfVariables.addition();
+		
 	}
 
 }
